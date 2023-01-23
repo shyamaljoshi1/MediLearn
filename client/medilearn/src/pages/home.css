@@ -1,0 +1,35 @@
+.container__Subjects{
+    margin-left: 60rem;
+    margin-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    width: auto;
+    justify-content: space-between;
+}
+
+.Subject__heading{
+    font-size: 1rem;
+}
+h1{
+    background-color: #1B65A7 !important;
+    color: white;
+    padding: 4rem;
+    display: block;
+    width: 60rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif !important;
+    border-radius: 1.6rem ;
+    text-align: center;
+    transition: all .15s;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    line-height: 3rem;
+}
+h1:hover{
+    background-color: #E9F3FC !important;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0px 0px 70px 9px rgba(27, 101, 167, 0.25) !important;
+
+}
