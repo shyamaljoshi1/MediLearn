@@ -1,32 +1,35 @@
-.container__Subjects{
-    margin-left: 60rem;
+.container__Subjects {
+    margin-left: 40rem;
     margin-top: 14rem;
     display: flex;
     flex-direction: column;
-    height: 50rem;
-    width: auto;
+    height: 100%;
+    width: 75%;
     justify-content: space-between;
 }
 
-.Subject__heading{
+.Subject__heading {
     font-size: 1rem;
+    /* background-color: red !important; */
+    font-weight: 500;
+    padding: 1rem 0rem;
 }
-h1{
+
+.heading1 {
     background-color: #1B65A7 !important;
     color: white;
     padding: 4rem;
     display: block;
-    width: 60rem;
     font-weight: 500;
     font-family: 'Raleway', sans-serif !important;
-    border-radius: 1.6rem ;
-    text-align: center;
+    border-radius: 1.6rem;
     transition: all .15s;
     text-transform: uppercase;
     letter-spacing: .4rem;
     line-height: 3rem;
 }
-h1:hover{
+
+.heading1:hover {
     background-color: #E9F3FC !important;
     color: #000;
     cursor: pointer;

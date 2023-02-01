@@ -1,0 +1,19 @@
+.container_ch1 {
+    margin-left: 60rem !important;
+    margin-top: 14rem !important;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.heading_ch1 {
+    font-size: 1.2rem !important;
+}
+
+.heading1 {
+    background-color: aqua;
+    width: fit-content !important;
+
+}
