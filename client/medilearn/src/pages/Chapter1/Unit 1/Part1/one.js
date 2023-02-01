@@ -3,7 +3,7 @@ import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
 
-// import pic1 from "../../../assets/Picture1.png";
+import pic1 from "../../../../assets/Picture1.png";
 
 const Part1 = () => {
    return (
@@ -14,6 +14,7 @@ const Part1 = () => {
          <div
             style={{
                marginLeft: "50rem",
+               marginTop: "10rem",
                width: "60%",
                height: "100%",
                display: "flex",
@@ -42,7 +43,7 @@ const Part1 = () => {
                   padding: "2rem"
                }}
             >
-               {/* <img src={pic1} style={{ width: "45rem" }} alt="" /> */}
+               <img src={pic1} style={{ width: "45rem" }} alt="" />
             </p>
             <div
                style={{
