@@ -2,6 +2,9 @@ import React from "react";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
+import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
+
+import "./preRequisites.css";
 
 const PreRequisites = () => {
    return (
@@ -9,51 +12,49 @@ const PreRequisites = () => {
          <ProSidebarProvider>
             <SidebarCustom />
          </ProSidebarProvider>
-         <div
-            style={{
-               marginLeft: "50rem",
-               marginTop: "10rem",
-               width: "60%",
-               height: "100%",
-               display: "flex",
-               flexDirection: "column",
-               border: "1px solid black"
-            }}
-         >
-            <h2 style={{ fontSize: "3rem" }}>
-               <b>
-                  <u>Pre-Requisites</u>
-               </b>
-            </h2>
-            <div style={{ padding: 20, backgroundColor: "purple" }}>
-               <p
-                  style={{
-                     display: "flex",
-                     flexDirection: "column",
-                     justifyContent: "center",
-                     // alignItems: "center",
-                     wordWrap: "break-word",
-                     width: "100%",
-                     fontSize: "2.5rem",
-                     backgroundColor: "#1a1a1a"
-                     //   color: "white"
-                  }}
-               >
-                  Before initiating the gamification tool you need to have prior
+         <div className="pre-requisites_main__container">
+            <h1 className="main_container__heading">Pre-Requisites</h1>
+            <div className="main_container__first_div">
+               <p className="main_container__first_div__p">
+                  Before initiating the Gamification tool you need to have prior
                   knowledge about the following before you begin this module:
-                  <ul
-                     style={{
-                        listStyleType: "circle",
-                        fontSize: "2rem",
-                        padding: "2rem"
-                     }}
-                  >
-                     <li>Structure of nerve and nerve fibers</li>
-                     <li>Classification of nerve fibers</li>
-                     <li>Sensory and motor areas of the brain </li>
-                     <li>Structure and types of skeletal muscle fibril</li>
+                  <ul className="list_view">
+                     <li className="list_view_1">
+                        Structure of nerve and nerve fibers
+                     </li>
+                     <li className="list_view_1">
+                        Classification of nerve fibers
+                     </li>
+                     <li className="list_view_1">
+                        Sensory and motor areas of the brain{" "}
+                     </li>
+                     <li className="list_view_1">
+                        Structure and types of skeletal muscle fibril
+                     </li>
                   </ul>
                </p>
+            </div>
+            <div className="last_div">
+               <h2 className="last_div__heading2">
+                  <Link style={{ textDecoration: "none" }} to="/ch1">
+                     <HiArrowSmLeft
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />{" "}
+                     Chapter 1
+                  </Link>
+               </h2>
+               <h2 className="last_div__heading2">
+                  <Link style={{ textDecoration: "none" }} to="/description">
+                     Description{" "}
+                     <HiArrowSmRight
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />
+                  </Link>
+               </h2>
             </div>
          </div>
       </>

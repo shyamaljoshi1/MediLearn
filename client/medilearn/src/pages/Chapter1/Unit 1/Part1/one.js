@@ -1,69 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
+import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
+import {
+   useDisclosure,
+   Modal,
+   ModalOverlay,
+   ModalContent,
+   ModalHeader,
+   ModalFooter,
+   ModalBody,
+   ModalCloseButton,
+   AlertDialog,
+   AlertDialogBody,
+   AlertDialogFooter,
+   AlertDialogHeader,
+   AlertDialogContent,
+   AlertDialogCloseButton,
+   AlertDialogOverlay,
+   Button
+} from "@chakra-ui/react";
+
+import "./one.css";
 
 import pic1 from "../../../../assets/Picture1.png";
 
-const Part1 = () => {
+function One() {
+   const { isOpen, onOpen, onClose } = useDisclosure();
+   const cancelRef = React.useRef();
    return (
       <>
          <ProSidebarProvider>
             <SidebarCustom />
          </ProSidebarProvider>
-         <div
-            style={{
-               marginLeft: "50rem",
-               marginTop: "10rem",
-               width: "60%",
-               height: "100%",
-               display: "flex",
-               flexDirection: "column",
-               border: "1px solid black"
-            }}
-         >
-            <h2
-               style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  // alignItems: "center",
-                  wordWrap: "break-word",
-                  width: "100%",
-                  fontSize: "3.5rem",
-                  textDecoration: "underline",
-                  textWeight: "bold"
-               }}
-            >
+         <div className="one_main__container">
+            <h1 className="main_container__heading">
                Part1: Nerves are classified as per their functions
-            </h2>
-            <p
-               style={{
-                  display: "flex",
-                  padding: "2rem"
-               }}
-            >
-               <img src={pic1} style={{ width: "45rem" }} alt="" />
+            </h1>
+            <p className="main_container__first_div__p">
+               <img src={pic1} style={{ width: "40rem" }} alt="" />
+               <div className="main_click_spot"></div>
             </p>
-            <div
-               style={{
-                  display: "flex",
-                  width: "100%",
-                  // flexDirection: "row",
-                  // justifyContent: "",
-                  // alignItems: "flex-end",
-                  // padding: "2rem",
-                  border: "1px solid black",
-                  fontSize: "2rem",
-                  right: "10rem",
-                  backgroundColor: "rgba(255, 255, 255, 0.5) !important"
-               }}
-            >
-               Next();
+            <div className="last_div">
+               <h2 className="last_div__heading2">
+                  <Link
+                     style={{ textDecoration: "none" }}
+                     // style={this.props.canClick ? {pointerEvents: "none"} : null}
+                     to="/unit1"
+                  >
+                     <HiArrowSmLeft
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />{" "}
+                     Unit 1
+                  </Link>
+               </h2>
+               <h2 className="last_div__heading2">
+                  <Link
+                     style={{ textDecoration: "none" }}
+                     to="/unit1/part1/two"
+                  >
+                     Next{" "}
+                     <HiArrowSmRight
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />
+                  </Link>
+               </h2>
             </div>
          </div>
       </>
    );
-};
+}
 
-export default Part1;
+export default One;

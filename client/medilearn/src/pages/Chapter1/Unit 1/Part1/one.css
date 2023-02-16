@@ -1,0 +1,20 @@
+.one_main__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 50rem;
+   width: 60%;
+   margin-left: 50rem;
+   margin-top: 14rem;
+}
+
+.main_click_spot {
+   height: 3rem;
+   width: 3rem;
+   border-radius: 100%;
+   border-color: red;
+   border-width: 1px;
+   border-style: solid;
+   position: absolute;
+   margin: -40rem 15rem;
+}

@@ -1,0 +1,21 @@
+.unit1_main__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 50rem;
+   width: 60%;
+   margin-left: 50rem;
+   margin-top: 14rem;
+}
+
+.unit1_list_view {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 1rem 4rem;
+   font-size: large;
+}
+
+.unit1_list_view_1 {
+   margin: 1.5rem 2rem;
+}

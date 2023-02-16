@@ -2,6 +2,9 @@ import React from "react";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
+import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
+
+import "./description.css";
 
 const Description = () => {
    return (
@@ -9,71 +12,64 @@ const Description = () => {
          <ProSidebarProvider>
             <SidebarCustom />
          </ProSidebarProvider>
-         <div
-            style={{
-               marginLeft: "50rem",
-               marginTop: "10rem",
-               width: "60%",
-               height: "100%",
-               display: "flex",
-               flexDirection: "column",
-               border: "1px solid black",
-               paddingTop: 30
-            }}
-         >
-            <h2 style={{ fontSize: "3rem" }}>
-               <b>
-                  <u>Description</u>
-               </b>
-            </h2>
-            <div style={{ padding: 20, backgroundColor: "purple" }}>
-               <p
-                  style={{
-                     display: "flex",
-                     flexDirection: "column",
-                     justifyContent: "center",
-                     // alignItems: "center",
-                     wordWrap: "break-word",
-                     width: "100%",
-                     fontSize: "2.5rem",
-                     backgroundColor: "#1a1a1a"
-                     //   color: "white"
-                  }}
-               >
-                  <ul
-                     style={{
-                        listStyleType: "circle",
-                        fontSize: "2rem",
-                        padding: "2rem"
-                     }}
-                  >
-                     <li>
+         <div className="description_main__container">
+            <h2 className="main_container__heading">Description</h2>
+            <div className="main_container__first_div">
+               <p className="main_container__first_div__p">
+                  <ul className="description_list_view">
+                     <li className="description_list_view_1">
                         Striated muscle fiber attached to the bones of the body
                         skeleton having a large number of cross-striations at
                         regular intervals they are skeletal muscles
                      </li>
-                     <li>Their contraction results in the body movement.</li>
-                     <li>It constitutes about 40% of the total body mass.</li>
-                     <li>
+                     <li className="description_list_view_1">
+                        Their contraction results in the body movement.
+                     </li>
+                     <li className="description_list_view_1">
+                        It constitutes about 40% of the total body mass.
+                     </li>
+                     <li className="description_list_view_1">
                         It is occurring consistently during all functional
                         fitness workouts and exercises.
                      </li>
-                     <li>
+                     <li className="description_list_view_1">
                         Being a health professional the defect or disorder in
                         the functioning of the skeletal muscle needs to be
                         addressed clinically.
                      </li>
-                     <li>
+                     <li className="description_list_view_1">
                         For a better clinical address of the issue its basic
                         physiological aspect needs to be well understood.
                      </li>
-                     <li>
+                     <li className="description_list_view_1">
                         The gamification will help you all to have in-depth
                         understanding of the physiological basis of skeletal
                         muscle contraction and its clinical applied aspect.
                      </li>
                   </ul>
                </p>
+            </div>
+            <div className="description_last_div">
+               <h2 className="last_div__heading2">
+                  <Link style={{ textDecoration: "none" }} to="/pre_requisites">
+                     <HiArrowSmLeft
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />{" "}
+                     Pre-Requisites
+                  </Link>
+               </h2>
+               <h2 className="last_div__heading2">
+                  <Link style={{ textDecoration: "none" }} to="/units">
+                     Units{" "}
+                     <HiArrowSmRight
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />
+                  </Link>
+               </h2>
             </div>
          </div>
       </>

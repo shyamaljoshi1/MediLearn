@@ -1,0 +1,35 @@
+.pre-requisites_main__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 50rem;
+   width: 60%;
+   margin-left: 50rem;
+   margin-top: 14rem;
+}
+
+.main_container__first_div__p {
+   font-size: 2rem;
+   margin: 1rem 1rem;
+}
+
+.list_view {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 1rem 6rem;
+}
+
+.list_view_1 {
+   margin: 1rem 0rem;
+}
+
+.last_div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.last_div__heading2 {
+   font-size: 2rem;
+}

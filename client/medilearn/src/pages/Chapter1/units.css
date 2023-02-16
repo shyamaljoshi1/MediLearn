@@ -1,0 +1,22 @@
+.units_main__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 50rem;
+   width: 60%;
+   margin-left: 50rem;
+   margin-top: 14rem;
+}
+
+.units_list_view {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 2rem 4rem;
+   font-size: large;
+   margin: 0rem 0rem;
+}
+
+.units_list_view_1 {
+   margin: 1.5rem 2rem;
+}

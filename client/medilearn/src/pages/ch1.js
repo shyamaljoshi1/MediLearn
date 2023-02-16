@@ -1,65 +1,34 @@
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../components/sidebar";
 import { Link } from "react-router-dom";
+import { HiArrowSmRight } from "react-icons/hi";
+import "./ch1.css";
+
 const Chapter1 = () => {
    return (
       <>
          <ProSidebarProvider>
             <SidebarCustom />
          </ProSidebarProvider>
-         <div
-            style={{
-               marginLeft: "50rem",
-               marginTop: "10rem",
-               width: "60%",
-               height: "100%",
-               display: "flex",
-               flexDirection: "column",
-               border: "1px solid black"
-            }}
-         >
-            <div
-               style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  backgroundColor: "purple",
-                  height: "100%",
-                  width: "fit-content",
-                  border: "1px solid black"
-               }}
-            >
-               <h1
-                  style={{
-                     display: "flex",
-                     flexDirection: "column",
-                     width: "fit-content",
-                     height: "fit-content",
-                     fontSize: "3rem",
-                     padding: "2rem"
-                  }}
-               >
+         <div className="ch1__main_container">
+            <div className="main_container__first_div">
+               <h1 className="main_container__heading">
                   Chapter 1: Skeletal Muscle Contraction
                </h1>
-               {/* <PreRequisites /> */}
-               {/* <Description /> */}
-
-               <div
-                  style={{
-                     backgroundColor: "purple",
-                     height: "100%",
-                     width: "100%",
-                     border: "1px solid black",
-                     fontSize: "1.5rem",
-                     alignSelf: "end"
-                     //  top: "3rem",
-                  }}
-               >
-                  <div>
-                     Pre - Requisites
-                     <Link to></Link>
-                  </div>
-                  <h2>Next</h2>
+               <div className="last_div">
+                  <h2 className="last_div__heading">
+                     <Link
+                        style={{ textDecoration: "none" }}
+                        to="/pre_requisites"
+                     >
+                        Pre-Requisites{" "}
+                        <HiArrowSmRight
+                           style={{
+                              fontSize: "1.5rem"
+                           }}
+                        />
+                     </Link>
+                  </h2>
                </div>
             </div>
          </div>

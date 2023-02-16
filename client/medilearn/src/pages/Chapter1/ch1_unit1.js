@@ -2,6 +2,9 @@ import React from "react";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
+import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
+
+import "./unit1.css";
 
 const Unit1 = () => {
    const navigate = useNavigate();
@@ -15,54 +18,56 @@ const Unit1 = () => {
          <ProSidebarProvider>
             <SidebarCustom />
          </ProSidebarProvider>
-         <div
-            style={{
-               marginLeft: "50rem",
-               marginTop: "10rem",
-               width: "60%",
-               height: "100%",
-               display: "flex",
-               flexDirection: "column",
-               border: "1px solid black"
-            }}
-         >
-            <p
-               style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  // alignItems: "center",
-                  wordWrap: "break-word",
-                  width: "100%",
-                  fontSize: "2.5rem"
-                  // backgroundColor: "#1a1a1a"
-                  //   color: "white"
-               }}
-            >
-               This gamification plot for the learning of skeletal muscle
-               contraction will be played in four sections.
-            </p>
-
-            <ul
-               style={{
-                  listStyleType: "circle",
-                  fontSize: "2rem",
-                  padding: "2rem"
-               }}
-            >
-               <li onClick={part1()}>
-                  Unit 1: Journey from CNS to Contraction Unit via Neuromuscular
-                  Junction
-               </li>
-               <li>
-                  Unit 2: Excitation contraction Coupling (Triad of T-tubule)
-               </li>
-               <li>
-                  Unit 3: Cross-bridging cycle leading to contraction (Structure
-                  and types of skeletal muscle fibril)
-               </li>
-               <li>Unit 4: Clinical Applied Aspect (Case-based Learning)</li>
-            </ul>
+         <div className="unit1_main__container">
+            <h1 className="main_container__heading">
+               Unit 1: Journey from CNS to Neuromuscular Junction
+            </h1>
+            <div className="main_container__first_div">
+               <p className="main_container__first_div__p">
+                  Parts:
+                  <ul className="unit1_list_view">
+                     <li className="unit1_list_view_1">
+                        Part 1: Nerves are classified as per their functions
+                     </li>
+                     <li className="unit1_list_view_1">
+                        Part 2: Mechanism of propagation of action potential
+                        along the motor nerve till pre-synaptic terminal knob.
+                     </li>
+                     <li className="unit1_list_view_1">
+                        Part 3: Neurotransmitter inside the synaptic vesicles
+                     </li>
+                     <li className="unit1_list_view_1">
+                        Part 4: Transmission at the level of NMJ (end-plate,
+                        Receptor, esterase)
+                     </li>
+                  </ul>
+               </p>
+            </div>
+            <div className="last_div">
+               <h2 className="last_div__heading2">
+                  <Link style={{ textDecoration: "none" }} to="/units">
+                     <HiArrowSmLeft
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />{" "}
+                     Units
+                  </Link>
+               </h2>
+               <h2 className="last_div__heading2">
+                  <Link
+                     style={{ textDecoration: "none" }}
+                     to="/unit1/part1/one"
+                  >
+                     Part 1{" "}
+                     <HiArrowSmRight
+                        style={{
+                           fontSize: "1.5rem"
+                        }}
+                     />
+                  </Link>
+               </h2>
+            </div>
          </div>
       </>
    );

@@ -1,0 +1,27 @@
+.description_main__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 50rem;
+   width: 60%;
+   margin-left: 50rem;
+   margin-top: 14rem;
+}
+
+.description_list_view {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 0rem 4rem;
+}
+
+.description_list_view_1 {
+   margin: 1rem 0rem;
+}
+
+.description_last_div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 2rem 0rem;
+}
