@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
 import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
 
-import pic2 from "../../../../assets/Picture2.png";
+// import "./one.css";
 
-const Two = () => {
+import pic4 from "../../../../assets/Picture4.png";
+
+function Four() {
    return (
       <>
          <ProSidebarProvider>
@@ -19,59 +22,38 @@ const Two = () => {
             <div className="main__two_container">
                <div className="left__main_container">
                   <p className="main_container__first_div__p">
-                     <img src={pic2} style={{ width: "40rem" }} alt="" />
+                     <img src={pic4} style={{ width: "40rem" }} alt="" />
                      {/* <div className="main_click_spot"></div> */}
                   </p>
                </div>
                <div className="right__main_container">
                   <p className="right_para">
                      <ul>
+                        <b
+                           style={{
+                              fontWeight: "1000",
+                              color: "red"
+                           }}
+                        >
+                           Sensory/ Afferent neurons:
+                        </b>
                         <li>
-                           The impulse from the somatic motor cortex area moves
-                           towards nuclei at the brain stem and from there the
-                           second neuron moves towards skeletal muscle.
+                           They carry impulses from the sensory receptor to the
+                           somatic sensory area of the brain .
                         </li>
                         <br />
+                        <b
+                           style={{
+                              fontWeight: "1000",
+                              color: "red"
+                           }}
+                        >
+                           Motor/ Efferent neurons:
+                        </b>
                         <li>
-                           The neuron from the motor cortex to nuclei at the
-                           brain stem is known as the{" "}
-                           <b
-                              style={{
-                                 fontWeight: "1000",
-                                 color: "red"
-                              }}
-                           >
-                              {" "}
-                              Upper Motor Neuron{" "}
-                           </b>{" "}
-                           of the Cranial nerve.
-                        </li>
-                        <br />
-                        <li>
-                           The neuron from the nuclei at the brain stem to the
-                           skeletal muscle is known as the{" "}
-                           <b
-                              style={{
-                                 fontWeight: "1000",
-                                 color: "red"
-                              }}
-                           >
-                              {" "}
-                              Lower Motor Neuron{" "}
-                           </b>{" "}
-                           of the Cranial nerve.
-                        </li>
-                        <br />
-                        <li>
-                           The tract is called the{" "}
-                           <b
-                              style={{
-                                 fontWeight: "1000",
-                                 color: "red"
-                              }}
-                           >
-                              Corticobulbar tract
-                           </b>
+                           They carry impulses from the somatic motor area of
+                           the brain to the effector organ which can be muscle/
+                           gland.
                         </li>
                      </ul>
                   </p>
@@ -95,7 +77,7 @@ const Two = () => {
                <h2 className="last_div__heading2">
                   <Link
                      style={{ textDecoration: "none" }}
-                     to="/unit1/part1/three"
+                     to="/unit1/part1/five"
                   >
                      Next{" "}
                      <HiArrowSmRight
@@ -109,6 +91,6 @@ const Two = () => {
          </div>
       </>
    );
-};
+}
 
-export default Two;
+export default Four;

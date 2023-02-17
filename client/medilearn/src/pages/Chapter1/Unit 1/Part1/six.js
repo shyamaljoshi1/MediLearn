@@ -7,9 +7,9 @@ import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
 
 import "./one.css";
 
-import pic1 from "../../../../assets/Picture1.png";
+import pic6 from "../../../../assets/Picture6.png";
 
-function One() {
+function Six() {
    return (
       <>
          <ProSidebarProvider>
@@ -22,7 +22,7 @@ function One() {
             <div className="main__two_container">
                <div className="left__main_container">
                   <p className="main_container__first_div__p">
-                     <img src={pic1} style={{ width: "40rem" }} alt="" />
+                     <img src={pic6} style={{ width: "40rem" }} alt="" />
                      {/* <div className="main_click_spot"></div> */}
                   </p>
                </div>
@@ -30,20 +30,10 @@ function One() {
                   <p className="right_para">
                      <ul>
                         <li>
-                           The neurons initiating from the brain (Cranial) can
-                           reach to the effector organ directly or via the
-                           spinal cord.
-                        </li>
-                        <br />
-                        <li>
-                           If they reach directly to the effector organ then
-                           they are termed cranial neuron/nerve.
-                        </li>
-                        <br />
-                        <li>
-                           If it reaches to spinal cord first and then from
-                           there it reaches the effector organ it is known as
-                           the Spinal nerve/ neuron
+                           For fine control, a single motor neuron innervates
+                           only a few muscle fibers. As observed in the larynx,
+                           extraocular. They have as few as 10 fibers/unit,
+                           precise control, and are rapid for reacting
                         </li>
                      </ul>
                   </p>
@@ -67,7 +57,7 @@ function One() {
                <h2 className="last_div__heading2">
                   <Link
                      style={{ textDecoration: "none" }}
-                     to="/unit1/part1/two"
+                     to="/unit1/part1/seven"
                   >
                      Next{" "}
                      <HiArrowSmRight
@@ -83,4 +73,4 @@ function One() {
    );
 }
 
-export default One;
+export default Six;

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { ProSidebarProvider } from "react-pro-sidebar";
 import SidebarCustom from "../../../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
 import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
 
-import pic2 from "../../../../assets/Picture2.png";
+// import "./one.css";
 
-const Two = () => {
+import pic5 from "../../../../assets/Picture5.png";
+
+function Five() {
    return (
       <>
          <ProSidebarProvider>
@@ -19,59 +22,32 @@ const Two = () => {
             <div className="main__two_container">
                <div className="left__main_container">
                   <p className="main_container__first_div__p">
-                     <img src={pic2} style={{ width: "40rem" }} alt="" />
+                     <img src={pic5} style={{ width: "40rem" }} alt="" />
                      {/* <div className="main_click_spot"></div> */}
                   </p>
                </div>
                <div className="right__main_container">
                   <p className="right_para">
-                     <ul>
+                  <ul>
                         <li>
-                           The impulse from the somatic motor cortex area moves
-                           towards nuclei at the brain stem and from there the
-                           second neuron moves towards skeletal muscle.
-                        </li>
-                        <br />
-                        <li>
-                           The neuron from the motor cortex to nuclei at the
-                           brain stem is known as the{" "}
+                           The skeletal muscle activity depends on the pattern
+                           and rate of impulse discharge from the α-motor neuron
+                           supplying the muscle A collection of muscle fibers
+                           innervated by a single motor neuron. This is known as
                            <b
                               style={{
                                  fontWeight: "1000",
                                  color: "red"
                               }}
                            >
-                              {" "}
-                              Upper Motor Neuron{" "}
-                           </b>{" "}
-                           of the Cranial nerve.
-                        </li>
-                        <br />
-                        <li>
-                           The neuron from the nuclei at the brain stem to the
-                           skeletal muscle is known as the{" "}
-                           <b
-                              style={{
-                                 fontWeight: "1000",
-                                 color: "red"
-                              }}
-                           >
-                              {" "}
-                              Lower Motor Neuron{" "}
-                           </b>{" "}
-                           of the Cranial nerve.
-                        </li>
-                        <br />
-                        <li>
-                           The tract is called the{" "}
-                           <b
-                              style={{
-                                 fontWeight: "1000",
-                                 color: "red"
-                              }}
-                           >
-                              Corticobulbar tract
+                              Motor Unit
                            </b>
+                           .
+                        </li>
+                        <br />
+                        <li>
+                           There are two types of motor units:
+                           <br />A Small MU and a Large MU
                         </li>
                      </ul>
                   </p>
@@ -95,7 +71,7 @@ const Two = () => {
                <h2 className="last_div__heading2">
                   <Link
                      style={{ textDecoration: "none" }}
-                     to="/unit1/part1/three"
+                     to="/unit1/part1/six"
                   >
                      Next{" "}
                      <HiArrowSmRight
@@ -109,6 +85,6 @@ const Two = () => {
          </div>
       </>
    );
-};
+}
 
-export default Two;
+export default Five;

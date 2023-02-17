@@ -4,8 +4,8 @@
    justify-content: space-between;
    height: 50rem;
    width: 60%;
-   margin-left: 50rem;
-   margin-top: 14rem;
+   margin-left: 40rem;
+   margin-top: 7rem;
 }
 
 .main_click_spot {
@@ -17,4 +17,14 @@
    border-style: solid;
    position: absolute;
    margin: -40rem 15rem;
+}
+
+.main__two_container {
+   display: flex;
+   flex-direction: row;
+}
+
+.right_para {
+   margin: 3rem 0 2rem 4rem;
+   font-size: 1.7rem;
 }

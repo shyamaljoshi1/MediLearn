@@ -4,9 +4,9 @@ import SidebarCustom from "../../../../components/sidebar";
 import { Link, useNavigate } from "react-router-dom";
 import { HiArrowSmRight, HiArrowSmLeft } from "react-icons/hi";
 
-import pic2 from "../../../../assets/Picture2.png";
+import pic3 from "../../../../assets/Picture3.png";
 
-const Two = () => {
+const Three = () => {
    return (
       <>
          <ProSidebarProvider>
@@ -19,7 +19,7 @@ const Two = () => {
             <div className="main__two_container">
                <div className="left__main_container">
                   <p className="main_container__first_div__p">
-                     <img src={pic2} style={{ width: "40rem" }} alt="" />
+                     <img src={pic3} style={{ width: "40rem" }} alt="" />
                      {/* <div className="main_click_spot"></div> */}
                   </p>
                </div>
@@ -28,13 +28,15 @@ const Two = () => {
                      <ul>
                         <li>
                            The impulse from the somatic motor cortex area moves
-                           towards nuclei at the brain stem and from there the
-                           second neuron moves towards skeletal muscle.
+                           towards the dorsal (posterior) grey matter of the
+                           spinal cord and moves to its ventral (anterior) side
+                           nuclei at the spinal cord. From there the second
+                           neuron (α motor neuron) moves toward skeletal muscle.
                         </li>
                         <br />
                         <li>
-                           The neuron from the motor cortex to nuclei at the
-                           brain stem is known as the{" "}
+                           The neuron from the motor cortex to the ventral grey
+                           matter of the spinal cord is known as the{" "}
                            <b
                               style={{
                                  fontWeight: "1000",
@@ -44,12 +46,13 @@ const Two = () => {
                               {" "}
                               Upper Motor Neuron{" "}
                            </b>{" "}
-                           of the Cranial nerve.
+                           of the spinal motor nerve.
                         </li>
                         <br />
                         <li>
-                           The neuron from the nuclei at the brain stem to the
-                           skeletal muscle is known as the{" "}
+                           The neuron from the nerve fiber from the ventral grey
+                           of the spinal cord to the skeletal muscle is known as
+                           the
                            <b
                               style={{
                                  fontWeight: "1000",
@@ -95,7 +98,7 @@ const Two = () => {
                <h2 className="last_div__heading2">
                   <Link
                      style={{ textDecoration: "none" }}
-                     to="/unit1/part1/three"
+                     to="/unit1/part1/four"
                   >
                      Next{" "}
                      <HiArrowSmRight
@@ -111,4 +114,4 @@ const Two = () => {
    );
 };
 
-export default Two;
+export default Three;
